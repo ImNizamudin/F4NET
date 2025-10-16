@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Wifi, Shield, Zap, Users, Rocket, Sparkles, Globe } from 'lucide-react';
+import useAuthStore from "../store/authStore";
 import useProductStore from '../store/productStore';
 import ProductCard from '../components/ProductCard';
-import useAuthStore from "../store/authStore";
 
 const Beranda = () => {
     const { user } = useAuthStore()
     const { products, fetchProducts } = useProductStore();
+
+    console.log(user)
 
     useEffect(() => {
         fetchProducts();

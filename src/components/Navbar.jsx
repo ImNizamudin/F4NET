@@ -123,13 +123,6 @@ const Navbar = () => {
                         {isAuthenticated && (
                             <>
                             <Link 
-                                to="/dashboard" 
-                                className="text-white hover:text-gray-300 transition-colors py-2 border-b border-white/10"
-                                onClick={() => setIsHumbergerOpen(false)}
-                            >
-                                Dashboard
-                            </Link>
-                            <Link 
                                 to="/transactions" 
                                 className="text-white hover:text-gray-300 transition-colors py-2 border-b border-white/10"
                                 onClick={() => setIsHumbergerOpen(false)}

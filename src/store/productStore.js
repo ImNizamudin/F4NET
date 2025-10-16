@@ -26,7 +26,7 @@ const useProductStore = create((set, get) => ({
 
     fetchCategories: async () => {
         try {
-            const response = await fetch('http://localhost:3001/categories');
+            const response = await fetch('http://localhost:3000/categories');
             const categories = await response.json();
             set({ categories });
         } catch (error) {

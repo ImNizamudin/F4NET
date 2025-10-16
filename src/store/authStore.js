@@ -1,10 +1,28 @@
 import { create } from "zustand"
 
 const useAuthStore = create((set) => ({
-    user: null,
-    isAuthenticated: false,
+    user: localStorage.getItem("USER") ? JSON.parse(localStorage.getItem("user")) : null,
+    isAuthenticated: localStorage.getItem("isAuthenticated"),
     loading: false,
     error: null,
+
+    initializeAuth: () => {
+        try {
+            const userStore = localStorage.getItem("user");
+            const authStore = localStorage.getItem("isAuthenticated")
+            
+            if (userStore && authStore === "true") {
+                set({
+                    user: JSON.parse(userStore),
+                    isAuthenticated: true
+                })
+            }
+        } catch(error) {
+            console.error("error init auth : ", error)
+            localStorage.removeItem("user");
+            localStorage.removeItem("isAuthenticated")
+        }
+    },
 
     loginApp: async (email, password) => {
         set({ loading: true, error: null})
@@ -21,6 +39,7 @@ const useAuthStore = create((set) => ({
                 })
 
                 localStorage.setItem("user", JSON.stringify({...user, password: undefined}))
+                localStorage.setItem("isAuthenticated", true);
 
                 return true
             } else {
@@ -44,6 +63,7 @@ const useAuthStore = create((set) => ({
         })
 
         localStorage.removeItem("user")
+        localStorage.removeItem("isAuthenticated")
     }
 }))
 
