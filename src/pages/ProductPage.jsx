@@ -39,16 +39,16 @@ const ProductsPage = () => {
                 </div>
 
                 <div className="glass-card p-6 mb-8">
-                    <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
-                        <div className="relative flex-1 w-full lg:max-w-md">
-                        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                        <input
-                            type="text"
-                            placeholder="Cari paket internet..."
-                            value={searchInput}
-                            onChange={handleSearch}
-                            className="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300"
-                        />
+                    <div className="flex flex-col lg:flex-row gap-4 items-center justify-center">
+                        <div className="relative flex-1">
+                            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                            <input
+                                type="text"
+                                placeholder="Cari paket internet..."
+                                value={searchInput}
+                                onChange={handleSearch}
+                                className="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300"
+                            />
                         </div>
                     </div>
                 </div>

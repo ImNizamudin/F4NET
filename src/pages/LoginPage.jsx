@@ -21,8 +21,8 @@ const LoginPage = () => {
     }
 
     return(
-        <div className="min-h-screen flex items-center justify-center px-4 py-12">
-            <div className="max-w-md w-full space-y-8">
+        <div className="min-h-screen flex items-center justify-center">
+            <div className="max-w-md w-full">
                 <div className="flex justify-center mb-6 text-center">
                     <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl flex items-center justify-center">
                         <span className="text-white font-bold text-2xl">F4</span>
@@ -31,11 +31,11 @@ const LoginPage = () => {
                 <h2 className="text-3xl font-heading font-bold text-white text-center">
                     Masuk ke F4NET
                 </h2>
-                <p className="mt-2 text-gray-300 text-center">
+                <p className="mt-1 text-gray-300 text-center">
                     Akses dashboard dan kelola paket internet Anda
                 </p>
 
-                <form className="mt-8 space-y-6 glass-card p-8" onSubmit={handleSubmit}>
+                <form className="mt-10 space-y-6 glass-card p-8" onSubmit={handleSubmit}>
                     {error && (
                         <div className="bg-red-500/20 border border-red-500 text-red-300 px-4 py-3 rounded-lg text-sm">
                             {error}
