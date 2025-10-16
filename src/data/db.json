@@ -1,0 +1,201 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "nizamudin",
+      "email": "nizam@gmail.com",
+      "password": "nizam123",
+      "phone": "+628123456789",
+      "balance": 150000,
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      "join_date": "2024-10-04"
+    },
+    {
+      "id": 2,
+      "username": "siti sarah", 
+      "email": "sarah@gmail.com",
+      "password": "sarah123",
+      "phone": "+628987654321",
+      "balance": 75000,
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+      "join_date": "2025-10-15"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Paket Harian",
+      "description": "Paket internet untuk penggunaan harian",
+      "icon": "🕒",
+      "color": "blue",
+      "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop"
+    },
+    {
+      "id": 2,
+      "name": "Paket Mingguan",
+      "description": "Paket internet untuk penggunaan mingguan", 
+      "icon": "📅",
+      "color": "green",
+      "image": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=300&h=200&fit=crop"
+    },
+    {
+      "id": 3,
+      "name": "Paket Bulanan",
+      "description": "Paket internet untuk penggunaan bulanan",
+      "icon": "📆",
+      "color": "purple",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+    },
+    {
+      "id": 4,
+      "name": "Paket Gaming",
+      "description": "Paket khusus untuk gaming",
+      "icon": "🎮",
+      "color": "orange",
+      "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=300&h=200&fit=crop"
+    }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Paket Harian 1GB",
+            "category_id": 1,
+            "price": 10000,
+            "original_price": 15000,
+            "discount": 33,
+            "validity": "1 Hari",
+            "data_quota": "1 GB",
+            "description": "Paket internet harian dengan kuota 1GB untuk browsing dan sosial media",
+            "features": ["Akses 24 jam", "Semua jaringan", "No throttle", "Support streaming"],
+            "popular": false,
+            "bestseller": false,
+            "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
+            "operator": "Telkomsel",
+            "network": "4G/5G",
+            "speed": "High Speed",
+            "rating": 4.2,
+            "review_count": 89
+        },
+        {
+            "id": 2,
+            "name": "Paket Harian 3GB",
+            "category_id": 1,
+            "price": 20000,
+            "original_price": 25000,
+            "discount": 20,
+            "validity": "1 Hari", 
+            "data_quota": "3 GB",
+            "description": "Paket internet harian dengan kuota 3GB untuk kebutuhan harian lengkap",
+            "features": ["Akses 24 jam", "Semua jaringan", "No throttle", "Support streaming HD"],
+            "popular": true,
+            "bestseller": true,
+            "image": "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=400&h=300&fit=crop",
+            "operator": "Telkomsel",
+            "network": "4G/5G",
+            "speed": "High Speed",
+            "rating": 4.8,
+            "review_count": 347
+        },
+        {
+            "id": 3,
+            "name": "Paket Mingguan 10GB",
+            "category_id": 2,
+            "price": 50000,
+            "original_price": 65000,
+            "discount": 23,
+            "validity": "7 Hari",
+            "data_quota": "10 GB",
+            "description": "Paket internet mingguan dengan kuota 10GB untuk penggunaan intensif",
+            "features": ["Akses 24 jam", "Semua jaringan", "Bonus streaming", "Extra night quota"],
+            "popular": true,
+            "bestseller": false,
+            "image": "https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=400&h=300&fit=crop",
+            "operator": "XL Axiata",
+            "network": "4G/5G", 
+            "speed": "High Speed",
+            "rating": 4.6,
+            "review_count": 234
+        },
+        {
+            "id": 4,
+            "name": "Paket Bulanan 30GB",
+            "category_id": 3,
+            "price": 120000,
+            "original_price": 150000,
+            "discount": 20,
+            "validity": "30 Hari",
+            "data_quota": "30 GB",
+            "description": "Paket internet bulanan dengan kuota 30GB untuk kebutuhan sebulan penuh",
+            "features": ["Akses 24 jam", "Semua jaringan", "Bonus streaming & gaming", "Rollover quota"],
+            "popular": false,
+            "bestseller": true,
+            "image": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400&h=300&fit=crop",
+            "operator": "Indosat",
+            "network": "4G/5G",
+            "speed": "High Speed",
+            "rating": 4.7,
+            "review_count": 512
+        },
+        {
+            "id": 5,
+            "name": "Paket Gaming 15GB",
+            "category_id": 4,
+            "price": 75000,
+            "original_price": 90000,
+            "discount": 17,
+            "validity": "30 Hari",
+            "data_quota": "15 GB",
+            "description": "Paket khusus gaming dengan low latency dan optimasi untuk game online",
+            "features": ["Low latency", "Optimized for gaming", "Akses 24 jam", "Priority gaming traffic"],
+            "popular": true,
+            "bestseller": false,
+            "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300&fit=crop",
+            "operator": "Smartfren",
+            "network": "4G/5G",
+            "speed": "Ultra Low Latency",
+            "rating": 4.9,
+            "review_count": 189
+        }
+    ],
+    "transactions": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "product_id": 2,
+            "product_name": "Paket Harian 3GB",
+            "amount": 20000,
+            "status": "success",
+            "phone_number": "+628123456789",
+            "transaction_date": "2024-01-15T10:30:00Z",
+            "expiry_date": "2024-01-16T10:30:00Z",
+            "payment_method": "E-Wallet",
+            "transaction_id": "TRX-001"
+        },
+        {
+            "id": 2,
+            "user_id": 1,
+            "product_id": 3,
+            "product_name": "Paket Mingguan 10GB",
+            "amount": 50000,
+            "status": "success", 
+            "phone_number": "+628123456789",
+            "transaction_date": "2024-01-10T14:20:00Z",
+            "expiry_date": "2024-01-17T14:20:00Z",
+            "payment_method": "Bank Transfer",
+            "transaction_id": "TRX-002"
+        },
+        {
+            "id": 3,
+            "user_id": 2,
+            "product_id": 4,
+            "product_name": "Paket Bulanan 30GB",
+            "amount": 120000,
+            "status": "success",
+            "phone_number": "+628987654321",
+            "transaction_date": "2024-01-08T09:15:00Z",
+            "expiry_date": "2024-02-07T09:15:00Z",
+            "payment_method": "Credit Card",
+            "transaction_id": "TRX-003"
+        }
+    ]
+}
